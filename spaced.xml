@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remote -->
+  <remote name="realme-mt6781-dev" fetch="https://github.com/realme-mt6781-dev" />
+  <remote name="github-lineage" fetch="https://github.com/LineageOS" />
+
+  <!-- Device Trees -->
+  <project path="device/realme/spaced" name="android_device_realme_spaced" revision="thirteen" remote="realme-mt6781-dev" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" revision="lineage-20" remote="github-lineage" />
+
+  <!-- Kernel Source -->
+  <project path="kernel/realme/mt6781" name="android_kernel_realme_mt6781" revision="thirteen" remote="realme-mt6781-dev" />
+
+  <!-- Vendor Blobs -->
+  <project path="vendor/realme/spaced" name="android_vendor_realme_spaced" revision="thirteen" remote="realme-mt6781-dev" />
+
+  <!-- Hardware Components -->
+  <project path="hardware/oplus" name="android_hardware_oplus" revision="lineage-20" remote="realme-mt6781-dev" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" revision="lineage-20" remote="realme-mt6781-dev" />
+
+  <!-- Mediatek WLAN -->
+  <project path="hardware/mediatek/wlan" name="android_hardware_mediatek_wlan" revision="lineage-20" remote="realme-mt6781-dev" />
+
+  <!-- Kprofiles -->
+  <project path="packages/apps/KProfiles" name="android_packages_apps_Kprofiles" revision="main" remote="realme-mt6781-dev" />
+
+  <!-- clang -->
+  <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang" revision="master" remote="realme-mt6781-dev" />
+</manifest>
